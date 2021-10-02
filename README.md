@@ -1,6 +1,5 @@
 # Gaming-Stat-Page
-
-https://nadin3amanda.github.io/nadin3amanda/
+https://nadin3amanda.github.io/Gaming-Stat-Page/
 
 <br><br>
  ✨Hey, I’m Nadine! ✨<br>
