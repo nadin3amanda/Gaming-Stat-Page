@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+h1 {
+  color: #792359;
+  font-weight: 800;
+  font-size: 25px;
+  opacity: 0.8;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+h2 {
+  color: #792359;
+  font-weight: 800;
+  font-size: 22px;
+  opacity: 0.8;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+h3 {
+  color: #d72483;
+  font-weight: 800;
+  font-size: 22px;
+  opacity: 0.8;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+h4 {
+  color: #d72483;
+  font-weight: 600;
+  font-size: 17px;
+  opacity: 0.8;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+p {
+  font-family: "Gemunu Libre", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #561d25;
+  opacity: 0.8;
+}
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #d72483, #fd3e81, #f2dc5d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  min-height: 80vh;
+  background: #ffffff;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 110px;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  background: #ffffff;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  left: 10%;
+}
+
+.circle2 {
+  top: 70%;
+  left: 80%;
+}
+
+.dashboard {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.459),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-bottom-left-radius: 110px;
+}
+/*---User Section--*/
+.user {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration-line: none;
+}
+/* fb, twitch, ps */
+.link {
+  display: block;
+  flex-direction: column;
+  width: 200px;
+  margin: 1rem 0rem;
+  padding: 1rem 1rem;
+}
+
+.link a {
+  font-size: 30px;
+  color: #fff;
+}
+.link a:hover {
+  display: block;
+  color: #792359;
+  transition: 0.7s;
+  transform: rotateY(180deg);
+}
+
+.link a:visited {
+  color: #fd3e81;
+}
+
+.link h4 {
+  padding: 0rem 0.8rem;
+}
+
+.games-played {
+  flex: 2;
+}
+.pro {
+  background: linear-gradient(to right top, #d72483, #fd3e81, #f2dc5d);
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  padding: 1rem;
+  position: relative;
+  width: 100px;
+}
+
+.pro h2 {
+  margin-left: 0.7rem;
+}
+
+.gamepad {
+  margin-left: 25px;
+  color: #f2dc5d;
+  width: 100px;
+  height: 40px;
+  transform: rotateZ(-40deg);
+}
+
+/*---END of User Section--*/
+
+/* Games Played */
+
+.status {
+  margin-bottom: 1.5rem;
+  
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  border-radius: 8px;
+  width: 40%;
+  padding: 0.1rem;
+  color: #d72483;
+}
+
+.games-played {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+  width: 100vw;
+}
+
+.card-per-game {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 350px;
+  min-width: 180px;
+  height: 70px;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  margin: 1rem 0rem;
+  padding: 1.5rem 0.8rem 1rem 1.2rem;
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 10);
+}
+/*-- progress bars --*/
+.progress1 {
+  position: relative;
+  background: linear-gradient(to right top, #d72483, #fd3e81, #f2dc5d);
+  width: 100%;
+  height: 25%;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress1::after {
+  position: absolute;
+  background: #fcc8ed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 98%;
+}
+
+.progress2 {
+  position: relative;
+  background: linear-gradient(to right top, #d72483, #fd3e81, #f2dc5d);
+  width: 100%;
+  height: 25%;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress2::after {
+  position: absolute;
+  background: #fcc8ed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 89%;
+}
+
+.progress3 {
+  position: relative;
+  background: linear-gradient(to right top, #d72483, #fd3e81, #f2dc5d);
+  width: 100%;
+  height: 25%;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress3::after {
+  position: absolute;
+  background: #fcc8ed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 60%;
+}
+/*-- END of progress bars --*/
+.card-info {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-left: 10px;
+}
+
+.percent {
+  background: linear-gradient(to right top, #fd3e81, #f2dc5d);
+  font-weight: 200;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  html,
+  body {
+    background: linear-gradient(to right,#d72483, #fd3e81);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow-x: hidden;
+  }
+  main {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top right, #d72483, #fd3e81, #f2dc5d);
+    overflow-x: hidden;
+  }
+
+  .glass {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+
+  .dashboard {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    border-top-right-radius: 50px;
+  }
+
+  .games-played {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 700px;
+  }
+
+  .cards {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-per-game {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+  }
+
+  .circle2 {
+    top: 85%;
+    left: 5%;
+  }
+}
